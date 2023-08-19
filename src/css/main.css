@@ -1,0 +1,115 @@
+body {
+  font-family: "Loew Next Arabic";
+}
+
+@font-face {
+  font-family: "Loew_Next_Arabic";
+  src: url("../../assets/fonts/ArbFONTS-Loew-Next-Arabic-ExtraBold.otf")
+      format("opentype");
+}
+
+@font-face {
+    font-family: "29LT Bukra";
+    src: url("../../assets/fonts/29LTBukra-Regular.otf")
+        format("opentype");
+  }
+
+  @font-face {
+    font-family: "NotoSansArabic";
+    src: url("../../assets/fonts/NotoSansArabic_Condensed-Bold.ttf")
+        format("opentype");
+  }
+
+.font-loew_next_arabic {
+    font-family: "Loew Next Arabic";
+}
+
+.font-29LT_Bukra {
+    font-family: "29LT Bukra";
+}
+
+.NotoSansArabic {
+  font-family: "NotoSansArabic";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-slide img,
+.swiper-slide .item-table {
+  transition: all 0.3s ease;
+}
+
+.swiper-slide .slider-item {
+  opacity: 0;
+}
+
+.swiper-slide-active img {
+  transform: scale(1.6);
+  transition: all 0.3s ease;
+}
+
+/* .swiper-slide-active .item-table {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+} */
+
+.swiper-slide-active {
+  z-index: 999;
+}
+.swiper-slide img {
+  width: 100%;
+}
+
+/* .swiper-slide-active .slider-item {
+  opacity: 1;
+  width: 300px;
+  transform: translateY(150px);
+}
+
+.slider-item {
+  opacity: 0.5;
+  width: 300px;
+  transform: translateY(150px);
+} */
+
+.netorp-title {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.table-info {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.table-text tr {
+  border-bottom: 0.62px solid #6eb79c;
+}
+
+.table-text td {
+  padding: 8px;
+}
+
+.footer2 {
+  width: 100%;
+}
+
+@media (max-width: 610px) {
+  .footer2 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .swiper-slide img {
+    width: 100%;
+  }
+}

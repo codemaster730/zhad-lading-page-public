@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Main.css -->
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div class="w-full h-[824px]">
+      <img
+        class="w-full h-full object-cover"
+        src="assets/imgs/hero-bg.png"
+        alt="Hero Background Image"
+      />
+      <div
+        class="absolute top-0 left-0 w-full h-[328px] bg-whiteGradient"
+      ></div>
+
+      <header
+        class="absolute left-[50%] translate-x-[-50%] top-0 w-full px-[30px] py-[61px] max-w-[1200px]"
+      >
+        <div class="w-full flex items-center justify-center lg:justify-end gap-[130px]">
+          <img
+            class="w-full max-w-[318px] lg:max-w-[446px]"
+            src="assets/imgs/logo.svg"
+            alt="Logo"
+          />
+          <ul class="hidden lg:flex items-center gap-[25px] NotoSansArabic">
+            <li>
+              <a
+                class="text-base font-black text-green leading-[112%]"
+                href="#footer"
+              >
+                اتصال
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base font-black text-green leading-[112%]"
+                href="#about"
+              >
+                من نحن
+              </a>
+            </li>
+            <li>
+              <a
+                class="text-base font-black text-green leading-[112%]"
+                href="#products"
+              >
+                منتجاتنا
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <h1
+        class="text-xl lg:text-2xl absolute top-[350px] left-[50%] translate-x-[-50%]  translate-y-[-30%] text-white w-full max-w-[728px] text-center NotoSansArabic"
+      >
+        علف شركة زاد بأرقى المواصفات العالمية ، صنع لتلبية متطلبات المربين
+        المحترفين .
+      </h1>
+    </div>
+    <div class="relative w-full">
+      <img
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        src="assets/imgs/section-bg.png"
+        alt="Section Background Image"
+      />
+      <div
+        class="absolute top-[-80px] lg:top-[-130px] left-[50%] translate-x-[-50%] flex items-center justify-center"
+      >
+        <div
+          class="absolute w-full h-full flex items-center justify-center text-3xl font-black text-white NotoSansArabic"
+        >
+          منتجاتنا
+        </div>
+        <img
+          src="assets/imgs/Vector.svg"
+          class="min-w-[340px] lg:w-[620px] lg:min-w-max"
+          alt=""
+        />
+      </div>
+      <div
+        id="products"
+        class="text-2xl relative left-[50%] translate-x-[-50%] top-0 z-9 pt-[220px] pb-[94px] w-full max-w-[1200px] overflow-hidden"
+      >
+        <div class="w-full lg:px-[34px]">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide green_bag">
+                <div class="flex flex-col items-center">
+                  <img src="assets/imgs/item2.svg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide brown_bag">
+                <div class="flex flex-col items-center">
+                  <img src="assets/imgs/item4.svg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide orange_bag">
+                <div class="flex flex-col items-center">
+                  <img src="assets/imgs/item5.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div
+              class="swiper-prev absolute top-[15%] sm:top-[25%] lg:top-[77px] z-[999]"
+            >
+              <div
+                class="w-[68px] h-[68px] bg-green rounded-full flex items-center justify-center"
+              >
+                <svg
+                  width="30"
+                  height="23"
+                  viewBox="0 0 30 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.91522 10.025C0.329433 10.6108 0.329433 11.5605 0.91522 12.1463L10.4612 21.6922C11.0469 22.278 11.9967 22.278 12.5825 21.6922C13.1683 21.1064 13.1683 20.1567 12.5825 19.5709L4.0972 11.0856L12.5825 2.60035C13.1683 2.01456 13.1683 1.06482 12.5825 0.479029C11.9967 -0.106758 11.0469 -0.106758 10.4612 0.479029L0.91522 10.025ZM29.0696 9.58563L1.97588 9.58563L1.97588 12.5856L29.0696 12.5856L29.0696 9.58563Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="swiper-next absolute top-[15%] sm:top-[25%] lg:top-[77px] z-[999] right-0"
+            >
+              <div
+                class="w-[68px] h-[68px] bg-green rounded-full flex items-center justify-center"
+              >
+                <svg
+                  width="29"
+                  height="23"
+                  viewBox="0 0 29 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.2562 12.1463C28.842 11.5605 28.842 10.6108 28.2562 10.025L18.7102 0.479031C18.1244 -0.106756 17.1747 -0.106756 16.5889 0.479031C16.0031 1.06482 16.0031 2.01456 16.5889 2.60035L25.0742 11.0856L16.5889 19.5709C16.0031 20.1567 16.0031 21.1064 16.5889 21.6922C17.1747 22.278 18.1244 22.278 18.7102 21.6922L28.2562 12.1463ZM0.101807 12.5856H27.1955V9.58563H0.101807V12.5856Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-[34px] green_bag">
+            <div
+              class="w-full max-w-[728px] text-white bg-green mt-[250px] mx-auto rounded-[20px] flex items-center flex-col md:px-[70px] sm:px-[15px] pt-[34px] pb-[87px]"
+            >
+              <div class="flex flex-col items-center relative container">
+                <div class="netorp-title container">
+                  <h6
+                    class="font-black text-xl+ md:text-[50px] sm:text-[32px] leading-[50px] text-right md:py-[25px] sm:py-[5px] NotoSansArabic"
+                  >
+                    علف مركّز تربية ماشية:
+                  </h6>
+                </div>
+                <div class="netorp-title container">
+                  <p
+                    class="md:text-[18px] sm:text-[14px] bg-greenLight md:py-[6px] md:px-[12px] sm:py-[5px] sm:px-[20px] NotoSansArabic"
+                    style="top: 60px;"  lang="ar" dir="rtl"
+                  >
+                    بروتيـن <span> 14</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text-sm mt-[18px] NotoSansArabic" lang="ar" dir="rtl">
+                ســـتخدم مع الأعـلاف المالئــــة لتســــمين الحيــــــوانات: الأغنام من ٠٫٥إلى ١٫٥كجم / الماعز: من ٠٫٤إلى ١كجم / الإبل: من ٣إلى ٥كجم حســـب الوزن الحي للحيوان۔ وهي تركيبــة متوازنة في محتواها من العنــــاصر الغذائيـــة المختلفة والتي ّ تلبي احتياجـــات الحيوانـات لتســـمينها بالشكل الصحيح الذي يعطي أعلى معدل نمو أفضل تصــافي وجودة لحـــم ممتازة بالطعم المميز، كما أنها تســـاعد على تعزيز أداء الجهاز الهضمـــي وتحســـين حالـــة الكرش عن طريـق تهيئة الوسط المناسب لنشاط الكائنات الحية الدقيقة النافعة بشكل أفضل۔
+              </div>
+              <div class="table-info mt-[18px] NotoSansArabic">
+                <table class="md:w-[50%] sm:w-[100%] table-text">
+                  <tr>
+                    <td>Cobalt</td>
+                    <td class="text-center">0.2 mg/kg</td>
+                    <td class="text-right">كوبلت</td>
+                  </tr>
+                  <tr>
+                    <td>Iron</td>
+                    <td class="text-center">30 mg/kg</td>
+                    <td class="text-right">حديد</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin A</td>
+                    <td class="text-center">12000 IU/kg</td>
+                    <td class="text-right">فيتامين ا</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin D</td>
+                    <td class="text-center">2400 IU/kg</td>
+                    <td class="text-right">فيتامين د</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin E</td>
+                    <td class="text-center">50 IU/kg</td>
+                    <td class="text-right">فيتامين ه</td>
+                  </tr>
+                  <tr>
+                    <td>Manganese</td>
+                    <td class="text-center">31 mg/kg</td>
+                    <td class="text-right">منغنيز</td>
+                  </tr>
+                  <tr>
+                    <td>Zinc</td>
+                    <td class="text-center">40 mg/kg</td>
+                    <td class="text-right">زنك</td>
+                  </tr>
+                  <tr>
+                    <td>Selenium</td>
+                    <td class="text-center">0.3 mg/kg</td>
+                    <td class="text-right">سيلينيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Iodine</td>
+                    <td class="text-center">0.5 mg/kg</td>
+                    <td class="text-right">اليود</td>
+                  </tr>
+                  <tr>
+                    <td>Bentonite</td>
+                    <td class="text-center">0.1 mg/kg</td>
+                    <td class="text-right">بنتونيت</td>
+                  </tr>
+                </table>
+                <table
+                  class="md:w-[50%] sm:w-[100%] mt-0 table-text"
+                >
+                  <tr>
+                    <td>Energy</td>
+                    <td class="text-center">2500 kcal</td>
+                    <td class="text-right">طاقة</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td class="text-center">14%</td>
+                    <td class="text-right">بروتين</td>
+                  </tr>
+                  <tr>
+                    <td>Fats</td>
+                    <td class="text-center">2.5%</td>
+                    <td class="text-right">الدهون ا</td>
+                  </tr>
+                  <tr>
+                    <td>Fiber</td>
+                    <td class="text-center">12%</td>
+                    <td class="text-right">الالياف</td>
+                  </tr>
+                  <tr>
+                    <td>Calcium</td>
+                    <td class="text-center">1%</td>
+                    <td class="text-right">كالسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Phosphor</td>
+                    <td class="text-center">0.5%</td>
+                    <td class="text-right">فوسفور</td>
+                  </tr>
+                  <tr>
+                    <td>Magnesium</td>
+                    <td class="text-center">0.12%</td>
+                    <td class="text-right">مغنيسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Potassium</td>
+                    <td class="text-center">0.8%</td>
+                    <td class="text-right">بوتاسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Copper</td>
+                    <td class="text-center">6 mg/kg</td>
+                    <td class="text-right">نحاس</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="px-[34px] brown_bag">
+            <div
+              class="w-full max-w-[728px] text-white bg-green mt-[250px] mx-auto rounded-[20px] flex items-center flex-col md:px-[70px] sm:px-[15px] pt-[34px] pb-[87px]"
+            >
+              <div class="flex flex-col items-center relative container">
+                <div class="netorp-title container">
+                  <h6
+                    class="font-black text-xl+ md:text-[50px] sm:text-[32px] leading-[50px] text-right md:py-[25px] sm:py-[5px] NotoSansArabic"
+                  >
+                    :نلمح نيمست زّكرم فلع
+                  </h6>
+                </div>
+                <div class="netorp-title container">
+                  <p
+                    class="md:text-[18px] sm:text-[14px] bg-greenLight md:py-[6px] md:px-[12px] sm:py-[5px] sm:px-[20px] NotoSansArabic"
+                    style="top: 60px"
+                  >
+                    بروتيـن <span> 21%</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text-sm mt-[18px] NotoSansArabic" lang="ar" dir="rtl">
+                ســـتخدم مع الأعـلاف المالئــــة لتســــمين الحيــــــوانات: الأغنام من ٠٫٥إلى ١٫٥كجم / الماعز: من ٠٫٤إلى ١كجم / الإبل: من ٣إلى ٥كجم حســـب الوزن الحي للحيوان۔ وهي تركيبــة متوازنة في محتواها من العنــــاصر الغذائيـــة المختلفة والتي ّ تلبي احتياجـــات الحيوانـات لتســـمينها بالشكل الصحيح الذي يعطي أعلى معدل نمو أفضل تصــافي وجودة لحـــم ممتازة بالطعم المميز، كما أنها تســـاعد على تعزيز أداء الجهاز الهضمـــي وتحســـين حالـــة الكرش عن طريـق تهيئة الوسط المناسب لنشاط الكائنات الحية الدقيقة النافعة بشكل أفضل۔  
+              </div>
+              <div class="table-info mt-[18px] NotoSansArabic">
+                <table class="md:w-[50%] sm:w-[100%] table-text">
+                  <tr>
+                    <td>Cobalt</td>
+                    <td class="text-center">0.2 mg/kg</td>
+                    <td class="text-right">كوبلت</td>
+                  </tr>
+                  <tr>
+                    <td>Iron</td>
+                    <td class="text-center">30 mg/kg</td>
+                    <td class="text-right">حديد</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin A</td>
+                    <td class="text-center">12000 IU/kg</td>
+                    <td class="text-right">فيتامين ا</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin D</td>
+                    <td class="text-center">2400 IU/kg</td>
+                    <td class="text-right">فيتامين د</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin E</td>
+                    <td class="text-center">50 IU/kg</td>
+                    <td class="text-right">فيتامين ه</td>
+                  </tr>
+                  <tr>
+                    <td>Manganese</td>
+                    <td class="text-center">31 mg/kg</td>
+                    <td class="text-right">منغنيز</td>
+                  </tr>
+                  <tr>
+                    <td>Zinc</td>
+                    <td class="text-center">40 mg/kg</td>
+                    <td class="text-right">زنك</td>
+                  </tr>
+                  <tr>
+                    <td>Selenium</td>
+                    <td class="text-center">0.3 mg/kg</td>
+                    <td class="text-right">سيلينيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Iodine</td>
+                    <td class="text-center">0.5 mg/kg</td>
+                    <td class="text-right">اليود</td>
+                  </tr>
+                  <tr>
+                    <td>Bentonite</td>
+                    <td class="text-center">0.1 mg/kg</td>
+                    <td class="text-right">بنتونيت</td>
+                  </tr>
+                </table>
+                <table
+                  class="md:w-[50%] sm:w-[100%] mt-0 table-text"
+                >
+                  <tr>
+                    <td>Energy</td>
+                    <td class="text-center">3000 kcal</td>
+                    <td class="text-right">طاقة</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td class="text-center">21%</td>
+                    <td class="text-right">بروتين</td>
+                  </tr>
+                  <tr>
+                    <td>Fats</td>
+                    <td class="text-center">3%</td>
+                    <td class="text-right">الدهون ا</td>
+                  </tr>
+                  <tr>
+                    <td>Fiber</td>
+                    <td class="text-center">10%</td>
+                    <td class="text-right">الالياف</td>
+                  </tr>
+                  <tr>
+                    <td>Calcium</td>
+                    <td class="text-center">1%</td>
+                    <td class="text-right">كالسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Phosphor</td>
+                    <td class="text-center">0.5%</td>
+                    <td class="text-right">فوسفور</td>
+                  </tr>
+                  <tr>
+                    <td>Magnesium</td>
+                    <td class="text-center">0.12%</td>
+                    <td class="text-right">مغنيسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Potassium</td>
+                    <td class="text-center">0.8%</td>
+                    <td class="text-right">بوتاسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Copper</td>
+                    <td class="text-center">6 mg/kg</td>
+                    <td class="text-right">نحاس</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="px-[34px] orange_bag">
+            <div
+              class="w-full max-w-[728px] text-white bg-green mt-[250px] mx-auto rounded-[20px] flex items-center flex-col md:px-[70px] sm:px-[15px] pt-[34px] pb-[87px]"
+            >
+              <div class="flex flex-col items-center relative container">
+                <div class="netorp-title container">
+                  <h6
+                    class="font-black text-xl+ md:text-[50px] sm:text-[32px] leading-[50px] text-right md:py-[25px] sm:py-[5px] NotoSansArabic"
+                  >
+                    :نلمح نيمست زّكرم فلع
+                  </h6>
+                </div>
+                <div class="netorp-title container">
+                  <p
+                    class="md:text-[18px] sm:text-[14px] bg-greenLight md:py-[6px] md:px-[12px] sm:py-[5px] sm:px-[20px] NotoSansArabic"
+                    style="top: 60px"
+                  >
+                    بروتيـن <span> 21%</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text-sm mt-[18px] NotoSansArabic" lang="ar" dir="rtl">
+                ســـتخدم مع الأعـلاف المالئــــة لتســــمين الحيــــــوانات: الأغنام من ٠٫٥إلى ١٫٥كجم / الماعز: من ٠٫٤إلى ١كجم / الإبل: من ٣إلى ٥كجم حســـب الوزن الحي للحيوان۔ وهي تركيبــة متوازنة في محتواها من العنــــاصر الغذائيـــة المختلفة والتي ّ تلبي احتياجـــات الحيوانـات لتســـمينها بالشكل الصحيح الذي يعطي أعلى معدل نمو أفضل تصــافي وجودة لحـــم ممتازة بالطعم المميز، كما أنها تســـاعد على تعزيز أداء الجهاز الهضمـــي وتحســـين حالـــة الكرش عن طريـق تهيئة الوسط المناسب لنشاط الكائنات الحية الدقيقة النافعة بشكل أفضل۔
+              </div>
+              <div class="table-info mt-[18px] NotoSansArabic">
+                <table class="md:w-[50%] sm:w-[100%] table-text">
+                  <tr>
+                    <td>Cobalt</td>
+                    <td class="text-center">0.2 mg/kg</td>
+                    <td class="text-right">كوبلت</td>
+                  </tr>
+                  <tr>
+                    <td>Iron</td>
+                    <td class="text-center">30 mg/kg</td>
+                    <td class="text-right">حديد</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin A</td>
+                    <td class="text-center">12000 IU/kg</td>
+                    <td class="text-right">فيتامين ا</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin D</td>
+                    <td class="text-center">2400 IU/kg</td>
+                    <td class="text-right">فيتامين د</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin E</td>
+                    <td class="text-center">50 IU/kg</td>
+                    <td class="text-right">فيتامين ه</td>
+                  </tr>
+                  <tr>
+                    <td>Manganese</td>
+                    <td class="text-center">31 mg/kg</td>
+                    <td class="text-right">منغنيز</td>
+                  </tr>
+                  <tr>
+                    <td>Zinc</td>
+                    <td class="text-center">40 mg/kg</td>
+                    <td class="text-right">زنك</td>
+                  </tr>
+                  <tr>
+                    <td>Selenium</td>
+                    <td class="text-center">0.3 mg/kg</td>
+                    <td class="text-right">سيلينيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Iodine</td>
+                    <td class="text-center">0.5 mg/kg</td>
+                    <td class="text-right">اليود</td>
+                  </tr>
+                  <tr>
+                    <td>Bentonite</td>
+                    <td class="text-center">0.1 mg/kg</td>
+                    <td class="text-right">بنتونيت</td>
+                  </tr>
+                </table>
+                <table
+                  class="md:w-[50%] sm:w-[100%] mt-0 table-text"
+                >
+                  <tr>
+                    <td>Energy</td>
+                    <td class="text-center">2900 kcal</td>
+                    <td class="text-right">طاقة</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td class="text-center">14%</td>
+                    <td class="text-right">بروتين</td>
+                  </tr>
+                  <tr>
+                    <td>Fats</td>
+                    <td class="text-center">2.5%</td>
+                    <td class="text-right">الدهون ا</td>
+                  </tr>
+                  <tr>
+                    <td>Fiber</td>
+                    <td class="text-center">10%</td>
+                    <td class="text-right">الالياف</td>
+                  </tr>
+                  <tr>
+                    <td>Calcium</td>
+                    <td class="text-center">1%</td>
+                    <td class="text-right">كالسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Phosphor</td>
+                    <td class="text-center">0.5%</td>
+                    <td class="text-right">فوسفور</td>
+                  </tr>
+                  <tr>
+                    <td>Magnesium</td>
+                    <td class="text-center">0.12%</td>
+                    <td class="text-right">مغنيسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Potassium</td>
+                    <td class="text-center">0.8%</td>
+                    <td class="text-right">بوتاسيوم</td>
+                  </tr>
+                  <tr>
+                    <td>Copper</td>
+                    <td class="text-center">6 mg/kg</td>
+                    <td class="text-right">نحاس</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-full bg-white" id="footer">
+      <div class="w-full max-w-[1200px] mx-auto pt-[76px] pb-[39px]">
+        <div class="max-w-[360px] mx-auto flex flex-col items-center">
+          <img class="mb-[48px]" src="./assets/imgs/footer1.jpg" alt="footer" />
+          <img class="footer2" src="./assets/imgs/footer2.jpg" alt="footer" />
+          <a href="#" class="mt-[71px]">
+            <img
+              src="assets/imgs/logo.svg"
+              class="max-w-[208px] w-full"
+              alt=""
+            />
+          </a>
+          <p class="text-sm font-regular text-black">
+            (C) 2023 جميع الحقوق محفوظة
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        slidesPerView: 3,
+        centeredSlides: true,
+        initialSlide: 1, // Index of the slide you want to be active initially
+        slideActiveClass: "swiper-slide-active",
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+
+        // Breakpoints
+        breakpoints: {
+          // When window width is >= 768px
+          0: {
+            slidesPerView: 3,
+          },
+          // When window width is >= 992px
+          992: {
+            slidesPerView: 5,
+          },
+          // When window width is >= 1200px
+          1200: {
+            slidesPerView: 5,
+          },
+        },
+      });
+
+      window.onload = function() {
+        let tempDom = document.getElementsByClassName("swiper-slide-active")[0]
+        let tempClass = tempDom.className;
+        if (tempClass.includes('green_bag')) {
+          console.log("green")
+        } else if (tempClass.includes('brown_bag')) {
+          document.getElementsByClassName("green_bag")[1].style.display = "none";
+          document.getElementsByClassName("orange_bag")[1].style.display = "none"
+        } else if (tempClass.includes('orange_bag')) {
+          console.log("orange")
+        }
+      };
+      function nextFunction() {
+        let tempDom = document.getElementsByClassName("swiper-slide-active")[0]
+        let tempClass = tempDom.className;
+        if (tempClass.includes('green_bag')) {
+          document.getElementsByClassName("green_bag")[1].style.display = "block";
+          document.getElementsByClassName("brown_bag")[1].style.display = "none";
+          document.getElementsByClassName("orange_bag")[1].style.display = "none"
+        } else if (tempClass.includes('brown_bag')) {
+          document.getElementsByClassName("brown_bag")[1].style.display = "block";
+          document.getElementsByClassName("green_bag")[1].style.display = "none";
+          document.getElementsByClassName("orange_bag")[1].style.display = "none"
+        } else if (tempClass.includes('orange_bag')) {
+          document.getElementsByClassName("orange_bag")[1].style.display = "block";
+          document.getElementsByClassName("brown_bag")[1].style.display = "none";
+          document.getElementsByClassName("green_bag")[1].style.display = "none"
+        }
+      }
+
+      function prevFunction() {
+        let tempDom = document.getElementsByClassName("swiper-slide-active")[0]
+        let tempClass = tempDom.className;
+        if (tempClass.includes('green_bag')) {
+          document.getElementsByClassName("green_bag")[1].style.display = "block";
+          document.getElementsByClassName("brown_bag")[1].style.display = "none";
+          document.getElementsByClassName("orange_bag")[1].style.display = "none"
+        } else if (tempClass.includes('brown_bag')) {
+          document.getElementsByClassName("brown_bag")[1].style.display = "block";
+          document.getElementsByClassName("green_bag")[1].style.display = "none";
+          document.getElementsByClassName("orange_bag")[1].style.display = "none"
+        } else if (tempClass.includes('orange_bag')) {
+          document.getElementsByClassName("orange_bag")[1].style.display = "block";
+          document.getElementsByClassName("brown_bag")[1].style.display = "none";
+          document.getElementsByClassName("green_bag")[1].style.display = "none"
+        }
+      }
+
+      document.getElementsByClassName("swiper-next")[0].addEventListener("click", nextFunction)
+      document.getElementsByClassName("swiper-prev")[0].addEventListener("click", prevFunction)
+    </script>
+  </body>
+</html>
